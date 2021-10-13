@@ -8,7 +8,7 @@ const config = {
     contractAddress: "5hAfxtMyVfJ4YR5RyPWfzH5uCgP9mQXEmzpMi5cqScCfjuTvYhX8rHX3csBYZkBkRVpUK6Enr7RFSFZq7t2Wvzj2",
     name: "KINGCOIN",
     github: "https://github.com/nftclub13/kingcoin",
-    author: "KINGCOIN",
+    author: "kingcoin",
     url: document.location.href,
 	logo: document.location.protocol + '//' + document.location.host + '/kingcoin/logo.jpg',
     barColor:"#240012",

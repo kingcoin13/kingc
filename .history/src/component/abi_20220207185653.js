@@ -5,12 +5,12 @@ import {Toast} from 'antd-mobile'
 import { JsonRpc } from "./jsonrpc";
 const rpc = new JsonRpc();
 const config = {
+    name: "NFTCLUB",
     contractAddress: "5hAfxtMyVfJ4YR5RyPWfzH5uCgP9mQXEmzpMi5cqScCfjuTvYhX8rHX3csBYZkBkRVpUK6Enr7RFSFZq7t2Wvzj2",
-    name: "KINGCOIN",
     github: "https://github.com/nftclub13/kingcoin",
-    author: "KINGCOIN",
+    author: "NFTCLUB",
     url: document.location.href,
-	logo: document.location.protocol + '//' + document.location.host + '/kingcoin/logo.jpg',
+	logo: document.location.protocol + '//' + document.location.host + '/nftclub/logo.jpg',
     barColor:"#240012",
     navColor:"#240012",
     barMode:"dark",
