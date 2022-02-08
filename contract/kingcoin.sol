@@ -336,7 +336,7 @@ interface CodeService {
 }
 
 
-contract UBS is Ownable, SeroInterface {
+contract KingCoin is Ownable, SeroInterface {
 
     using SafeMath for uint256;
 
