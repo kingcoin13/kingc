@@ -11,8 +11,8 @@ const config = {
     author: "KINGCOIN",
     url: document.location.href,
 	logo: document.location.protocol + '//' + document.location.host + '/kingcoin/logo.jpg',
-    barColor:"#240012",
-    navColor:"#240012",
+    barColor:"#a1dcf5",
+    navColor:"#a1dcf5",
     barMode:"dark",
     navMode:"light"
 }
@@ -256,10 +256,10 @@ class Abi {
                         pk: item.PK,
                         mainPKr: item.MainPKr,
                         name: item.Name,
-                        balance: item.Balance.get("NFTCLUB")
+                        balance: item.Balance.get("KINGCOIN")
                     })
                 } else {
-                    accounts.push({pk: item.PK, mainPKr: item.MainPKr, name: item.Name, balance: item.Balance["NFTCLUB"]})
+                    accounts.push({pk: item.PK, mainPKr: item.MainPKr, name: item.Name, balance: item.Balance["KINGCOIN"]})
                 }
             });
             callback(accounts)
@@ -333,19 +333,19 @@ class Abi {
     }
 
     triggerStaticProfit(from, mainPKr, callback) {
-        this.executeMethod('triggerStaticProfit', from, mainPKr, [], 0,"NFTCLUB", callback);
+        this.executeMethod('triggerStaticProfit', from, mainPKr, [], 0,"KINGCOIN", callback);
     }
 
     reinvest(from, mainPKr, value, callback) {
-        this.executeMethod('reinvest', from, mainPKr, [value], 0,"NFTCLUB", callback);
+        this.executeMethod('reinvest', from, mainPKr, [value], 0,"KINGCOIN", callback);
     }
 
     invest(from, mainPKr, value, code, callback) {
-        this.executeMethod('invest', from, mainPKr, [code], value,"NFTCLUB", callback);
+        this.executeMethod('invest', from, mainPKr, [code], value,"KINGCOIN", callback);
     }
 
     withdraw(from, mainPKr, callback) {
-        this.executeMethod('withdraw', from, mainPKr, [], 0,"NFTCLUB", callback);
+        this.executeMethod('withdraw', from, mainPKr, [], 0,"KINGCOIN", callback);
     }
 
     callMethod(_method, from, _args, callback) {

@@ -280,7 +280,7 @@ class NftClub extends Component {
         // console.log("exp", exp, this.state.details.staticTimestamp)
 
         return (
-            <div style={{maxWidth: '600px', backgroundColor: '#240012'}}>
+            <div style={{maxWidth: '600px', backgroundColor: '#a1dcf5'}}>
                 <div style={{position: "absolute", top: "0", width: "100%", maxWidth: "600px"}}>
                                         <span style={{float: "left", padding: "15px"}} onClick={() => {
                                             Modal.alert(
@@ -386,7 +386,7 @@ class NftClub extends Component {
                             </div>
                             <div
                                 style={{float: 'left', width: '50%'}}>
-                                <span className="column-value">{decimals(this.state.account.balance, 18, 4)}</span> NFTCLUB
+                                <span className="column-value">{decimals(this.state.account.balance, 18, 4)}</span> KINGCOIN
                             </div>
                             <div style={{float: 'right', width: '20%'}}>
                                 <div style={{float: 'right'}}>
@@ -404,7 +404,7 @@ class NftClub extends Component {
                                 className="column-title">{language.e().account.value}:</span>
                             </div>
                             <div style={{float: 'right', width: '70%'}}><span
-                                className="column-value">{decimals(this.state.details.value - this.state.details.returnValue, 18, 4)}</span> NFTCLUB
+                                className="column-value">{decimals(this.state.details.value - this.state.details.returnValue, 18, 4)}</span> KINGCOIN
                             </div>
                         </List.Item>
 
@@ -415,7 +415,7 @@ class NftClub extends Component {
                             </div>
                             <div
                                 style={{float: 'left', width: '70%'}}><span
-                                className="column-value">{decimals(this.state.details.staticReward, 18, 4)}</span> NFTCLUB
+                                className="column-value">{decimals(this.state.details.staticReward, 18, 4)}</span> KINGCOIN
                             </div>
                         </List.Item>
 
@@ -426,7 +426,7 @@ class NftClub extends Component {
                             </div>
                             <div
                                 style={{float: 'right', width: '70%'}}><span
-                                className="column-value">{decimals(this.state.details.returnValue, 18, 4)}</span> NFTCLUB
+                                className="column-value">{decimals(this.state.details.returnValue, 18, 4)}</span> KINGCOIN
                             </div>
                         </List.Item>
 
@@ -437,7 +437,7 @@ class NftClub extends Component {
                             </div>
                             <div
                                 style={{float: 'rights', width: '70%'}}><span
-                                className="column-value">{decimals(this.state.details.dynamicReward, 18, 4)}</span> NFTCLUB
+                                className="column-value">{decimals(this.state.details.dynamicReward, 18, 4)}</span> KINGCOIN
                             </div>
                         </List.Item>
                         <List.Item>
@@ -447,7 +447,7 @@ class NftClub extends Component {
                             </div>
                             <div
                                 style={{float: 'right', width: '70%'}}><span
-                                className="column-value">{decimals(this.state.details.totalAynamicReward, 18, 4)}</span> NFTCLUB
+                                className="column-value">{decimals(this.state.details.totalAynamicReward, 18, 4)}</span> KINGCOIN
                             </div>
                         </List.Item>
 
@@ -458,7 +458,7 @@ class NftClub extends Component {
                             </div>
                             <div
                                 style={{float: 'left', width: '40%'}}> <span
-                                className="column-value">{decimals(this.state.details.canWithdraw, 18, 4)}</span> NFTCLUB
+                                className="column-value">{decimals(this.state.details.canWithdraw, 18, 4)}</span> KINGCOIN
                             </div>
                             <div style={{float: 'right', width: '30%'}}>
                                 <div style={{float: 'right'}}>
@@ -522,7 +522,7 @@ class NftClub extends Component {
                                 <div style={{float: 'left'}}>
                                     <span className="column-title">{language.e().account.recommend.achievement}: </span>
                                     <span
-                                        className="column-title">{decimals(self.state.details.achievements[0], 18, 9)} NFTCLUB</span>
+                                        className="column-title">{decimals(self.state.details.achievements[0], 18, 9)} KINGCOIN</span>
                                 </div>
                             </div>
                         </List.Item>
