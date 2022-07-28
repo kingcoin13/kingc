@@ -8,6 +8,8 @@ import copy from "copy-text-to-clipboard/index"
 import Timer from "./timer";
 import CountTimeDown from "./countTimeDown";
 
+import backG from "../img/bg.jpeg";
+
 const operation = Modal.operation;
 const tenThousand = new BigNumber("10000000000000000000000");
 
@@ -175,7 +177,7 @@ class NftClub extends Component {
 
     takePartIn() {
         
-        let defCode = "hAYBo5yIHmP";
+        let defCode = "5H44HVAD";
         if (this.state.details.parentCode !== "") {
             defCode = this.state.details.parentCode;
         }
@@ -280,7 +282,7 @@ class NftClub extends Component {
         // console.log("exp", exp, this.state.details.staticTimestamp)
 
         return (
-            <div style={{maxWidth: '600px', backgroundColor: '#a1dcf5'}}>
+            <div style={{maxWidth: '600px', backgroundImage:"url(" + require("../img/bg.jpeg") + ")"}}>
                 <div style={{position: "absolute", top: "0", width: "100%", maxWidth: "600px"}}>
                                         <span style={{float: "left", padding: "15px"}} onClick={() => {
                                             Modal.alert(
@@ -293,7 +295,7 @@ class NftClub extends Component {
                                                     <span style={{'whiteSpace': 'pre-wrap'}}>{language.e().rule1}</span>
                                                     <span
                                                         style={{color: '#989898'}} onClick={() => {
-                                                        copy('hAYBo5yIHmP');
+                                                        copy('5H44HVAD');
                                                         Toast.success(language.e().copySucc, 1);
                                                     }}
                                                     >
@@ -321,7 +323,7 @@ class NftClub extends Component {
                          <span style={{color: "#fff"}}>{this.state.lang}</span></span>
                 </div>
                 <div className="header">
-                    <img src={require('../img/header.jpg')} width="100%"/>
+                    <img src={require('../img/header.jpeg')} width="100%"/>
                     <br/>
                     {
                         this.state.info.closureTime != 0 &&
@@ -331,7 +333,7 @@ class NftClub extends Component {
                 <WingBlank size="lg">
                     {
                         this.state.isManager ? <> <Flex>
-                            <Flex.Item> KINGCLUB:{this.state.balanceOfAmount} </Flex.Item>
+                            <Flex.Item> EMPC:{this.state.balanceOfAmount} </Flex.Item>
                             <Flex.Item>
                             <InputItem
                                     type={Number}
@@ -386,7 +388,7 @@ class NftClub extends Component {
                             </div>
                             <div
                                 style={{float: 'left', width: '50%'}}>
-                                <span className="column-value">{decimals(this.state.account.balance, 18, 4)}</span> KINGCOIN
+                                <span className="column-value">{decimals(this.state.account.balance, 18, 4)}</span> KINGC
                             </div>
                             <div style={{float: 'right', width: '20%'}}>
                                 <div style={{float: 'right'}}>
@@ -404,7 +406,7 @@ class NftClub extends Component {
                                 className="column-title">{language.e().account.value}:</span>
                             </div>
                             <div style={{float: 'right', width: '70%'}}><span
-                                className="column-value">{decimals(this.state.details.value - this.state.details.returnValue, 18, 4)}</span> KINGCOIN
+                                className="column-value">{decimals(this.state.details.value - this.state.details.returnValue, 18, 4)}</span> KINGC
                             </div>
                         </List.Item>
 
@@ -415,7 +417,7 @@ class NftClub extends Component {
                             </div>
                             <div
                                 style={{float: 'left', width: '70%'}}><span
-                                className="column-value">{decimals(this.state.details.staticReward, 18, 4)}</span> KINGCOIN
+                                className="column-value">{decimals(this.state.details.staticReward, 18, 4)}</span> KINGC
                             </div>
                         </List.Item>
 
@@ -426,7 +428,7 @@ class NftClub extends Component {
                             </div>
                             <div
                                 style={{float: 'right', width: '70%'}}><span
-                                className="column-value">{decimals(this.state.details.returnValue, 18, 4)}</span> KINGCOIN
+                                className="column-value">{decimals(this.state.details.returnValue, 18, 4)}</span> KINGC
                             </div>
                         </List.Item>
 
@@ -437,7 +439,7 @@ class NftClub extends Component {
                             </div>
                             <div
                                 style={{float: 'rights', width: '70%'}}><span
-                                className="column-value">{decimals(this.state.details.dynamicReward, 18, 4)}</span> KINGCOIN
+                                className="column-value">{decimals(this.state.details.dynamicReward, 18, 4)}</span> KINGC
                             </div>
                         </List.Item>
                         <List.Item>
@@ -447,7 +449,7 @@ class NftClub extends Component {
                             </div>
                             <div
                                 style={{float: 'right', width: '70%'}}><span
-                                className="column-value">{decimals(this.state.details.totalAynamicReward, 18, 4)}</span> KINGCOIN
+                                className="column-value">{decimals(this.state.details.totalAynamicReward, 18, 4)}</span> KINGC
                             </div>
                         </List.Item>
 
@@ -458,7 +460,7 @@ class NftClub extends Component {
                             </div>
                             <div
                                 style={{float: 'left', width: '40%'}}> <span
-                                className="column-value">{decimals(this.state.details.canWithdraw, 18, 4)}</span> KINGCOIN
+                                className="column-value">{decimals(this.state.details.canWithdraw, 18, 4)}</span> KINGC
                             </div>
                             <div style={{float: 'right', width: '30%'}}>
                                 <div style={{float: 'right'}}>
@@ -485,7 +487,7 @@ class NftClub extends Component {
                         <div style={{borderRadius:"5px",background:"#f6efc1",padding:"6px 12px"}}>
                             <Flex>
                                 <Flex.Item style={{flex:2}}>
-                                    <span className="column-title" style={{fontWeight:"600",color:"#0f0c08"}}>KINGCLUB </span><span className="column-value" style={{fontWeight:"600",color:"#4f3925"}}>{decimals(this.state.details.harvest,18,6)}</span>
+                                    <span className="column-title" style={{fontWeight:"600",color:"#0f0c08"}}>EMPC </span><span className="column-value" style={{fontWeight:"600",color:"#4f3925"}}>{decimals(this.state.details.harvest,18,6)}</span>
                                 </Flex.Item>
                                 <Flex.Item style={{flex:1}}>
                                     <Button disabled={new BigNumber(this.state.details.harvest).toNumber() ===0} 
@@ -522,7 +524,7 @@ class NftClub extends Component {
                                 <div style={{float: 'left'}}>
                                     <span className="column-title">{language.e().account.recommend.achievement}: </span>
                                     <span
-                                        className="column-title">{decimals(self.state.details.achievements[0], 18, 9)} KINGCOIN</span>
+                                        className="column-title">{decimals(self.state.details.achievements[0], 18, 9)} KINGC</span>
                                 </div>
                             </div>
                         </List.Item>

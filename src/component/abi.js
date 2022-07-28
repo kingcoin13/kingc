@@ -5,12 +5,12 @@ import {Toast} from 'antd-mobile'
 import { JsonRpc } from "./jsonrpc";
 const rpc = new JsonRpc();
 const config = {
-    contractAddress: "5hAfxtMyVfJ4YR5RyPWfzH5uCgP9mQXEmzpMi5cqScCfjuTvYhX8rHX3csBYZkBkRVpUK6Enr7RFSFZq7t2Wvzj2",
-    name: "KINGCOIN",
-    github: "https://github.com/nftclub13/kingcoin",
-    author: "KINGCOIN",
+    contractAddress: "35d3KGerTEqsieSARXwz4QEsiWCeTABPR4ySkA1tnrPW3Ws2VruKGmr6cZX8KHzKqZ66Af35g5sEPPke4bZXsT9d",
+    name: "KINGC",
+    github: "https://github.com/nftclub13/kingc",
+    author: "KINGC",
     url: document.location.href,
-	logo: document.location.protocol + '//' + document.location.host + '/kingcoin/logo.jpg',
+	logo: document.location.protocol + '//' + document.location.host + '/kingc/logo.jpeg',
     barColor:"#a1dcf5",
     navColor:"#a1dcf5",
     barMode:"dark",
@@ -329,23 +329,23 @@ class Abi {
     } 
 
     recharge(from, mainPKr, amount, callback) {
-        this.executeMethod('recharge', from, mainPKr, [], amount, "KINGCLUB", callback);
+        this.executeMethod('recharge', from, mainPKr, [], amount, "KINGC", callback);
     }
 
     triggerStaticProfit(from, mainPKr, callback) {
-        this.executeMethod('triggerStaticProfit', from, mainPKr, [], 0,"KINGCOIN", callback);
+        this.executeMethod('triggerStaticProfit', from, mainPKr, [], 0,"KINGC", callback);
     }
 
     reinvest(from, mainPKr, value, callback) {
-        this.executeMethod('reinvest', from, mainPKr, [value], 0,"KINGCOIN", callback);
+        this.executeMethod('reinvest', from, mainPKr, [value], 0,"KINGC", callback);
     }
 
     invest(from, mainPKr, value, code, callback) {
-        this.executeMethod('invest', from, mainPKr, [code], value,"KINGCOIN", callback);
+        this.executeMethod('invest', from, mainPKr, [code], value,"KINGC", callback);
     }
 
     withdraw(from, mainPKr, callback) {
-        this.executeMethod('withdraw', from, mainPKr, [], 0,"KINGCOIN", callback);
+        this.executeMethod('withdraw', from, mainPKr, [], 0,"KINGC", callback);
     }
 
     callMethod(_method, from, _args, callback) {
