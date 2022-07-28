@@ -256,10 +256,10 @@ class Abi {
                         pk: item.PK,
                         mainPKr: item.MainPKr,
                         name: item.Name,
-                        balance: item.Balance.get("KINGCOIN")
+                        balance: item.Balance.get("KINGC")
                     })
                 } else {
-                    accounts.push({pk: item.PK, mainPKr: item.MainPKr, name: item.Name, balance: item.Balance["KINGCOIN"]})
+                    accounts.push({pk: item.PK, mainPKr: item.MainPKr, name: item.Name, balance: item.Balance["KINGC"]})
                 }
             });
             callback(accounts)
