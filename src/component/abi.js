@@ -329,7 +329,7 @@ class Abi {
     } 
 
     recharge(from, mainPKr, amount, callback) {
-        this.executeMethod('recharge', from, mainPKr, [], amount, "KINGC", callback);
+        this.executeMethod('recharge', from, mainPKr, [], amount, "EMPC", callback);
     }
 
     triggerStaticProfit(from, mainPKr, callback) {
