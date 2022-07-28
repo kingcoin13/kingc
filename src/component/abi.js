@@ -5,7 +5,7 @@ import {Toast} from 'antd-mobile'
 import { JsonRpc } from "./jsonrpc";
 const rpc = new JsonRpc();
 const config = {
-    contractAddress: "35d3KGerTEqsieSARXwz4QEsiWCeTABPR4ySkA1tnrPW3Ws2VruKGmr6cZX8KHzKqZ66Af35g5sEPPke4bZXsT9d",
+    contractAddress: "3d6UsUQrPiQVrXmSUkg7DPTmSZxGsm8fo9XuJGsV31V3xh7A2wRhyowYwVCDmXncJCEKhJqrgQD58JkfA4CHQBrb",
     name: "KINGC",
     github: "https://github.com/nftclub13/kingc",
     author: "KINGC",
@@ -267,7 +267,7 @@ class Abi {
     }
 
     details(mainPkr, code, callback) {
-        this.callMethod('details', mainPkr, [code], function (json) {
+        this.callMethod('details', mainPkr, [""], function (json) {
             if (!json || json === "0x0") {
                 callback({
                     code: "",
